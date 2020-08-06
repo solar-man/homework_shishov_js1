@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+
+<body>
+
+    <script>
+        'use strict';
+
+        let a = Math.random();
+        let b = Math.random();
+        a = (a * 100).toFixed(0);
+        b = (b * 100).toFixed(0);
+        console.log(a, b);
+
+        if (a >= 0 && b >= 0) {
+            let result = a - b;
+            console.log(result);
+        } else if (a < 0 && b < 0) {
+            let result = a * b;
+            console.log(result);
+        } else if (a * b < 0) { // нашел на  форуме C++ -_-
+            let result = a + b;
+            console.log(result);
+        }
+    </script>
+
+</body>
+
+</html>
