@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1.1</title>
+</head>
+
+<body>
+
+    <script>
+        'use strict';
+
+        /* ES5 */
+        function ProductES5(name, price) {
+                this.name = name;
+                this.price = price;
+            }
+
+            ProductES5.prototype.make25PercentDiscount = function make25PercentDiscount() {
+                this.price = this.price - this.price * 0.25;
+            };
+
+        const productES51 = new ProductES5('Scissors', 1000);
+        const productES52 = new ProductES5('Pencil', 1200);
+        console.log(productES51);
+        console.log(productES52);
+        productES51.make25PercentDiscount();
+        productES52.make25PercentDiscount();
+        console.log(productES51);
+        console.log(productES52);
+
+
+        /* ES6 */
+        class ProductES6 {
+
+            constructor(name, price) {
+                this.name = name;
+                this.price = price;
+            }
+
+            make25PercentDiscount() {
+                this.price = this.price - this.price * 0.25;
+            }
+        }
+
+        const productES61 = new ProductES6('Stone', 800);
+        const productES62 = new ProductES6('Paper', 400);
+        console.log(productES61);
+        console.log(productES62);
+        productES61.make25PercentDiscount();
+        productES62.make25PercentDiscount();
+        console.log(productES61);
+        console.log(productES62);
+    </script>
+
+</body>
+
+</html>
