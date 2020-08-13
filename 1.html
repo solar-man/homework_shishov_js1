@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+
+<body>
+
+    <script>
+        'use strict';
+
+        function numberTransform(n) {
+
+            if (!Number.isInteger(n) || n < 0 || n > 999) {
+                console.log('Значение аргумента должно быть целым числом в диапазоне [0 .. 999].');
+                return {};
+            } 
+
+            let arrNumber = n.toString(10).split('').map(Number);
+            
+            let len = arrNumber.length;
+            let units = arrNumber[--len];
+            let tens = 0;
+            let hundreds = 0;
+            if (len != 0) {
+                tens = arrNumber[--len];
+            }
+            if (len != 0) {
+                hundreds = arrNumber[--len];
+            }
+
+            return {
+                units: units,
+                tens: tens,
+                hundreds: hundreds,
+            }
+        }
+    
+        console.log(numberTransform(679));
+    </script>
+
+</body>
+
+</html>
