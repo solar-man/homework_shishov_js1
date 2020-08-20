@@ -1,0 +1,14 @@
+.slider-item {
+  display: inline-block;
+  width: 640px;
+  height: 480px;
+}
+
+.lightgalleryWrap {
+  display: inline-block;
+}
+
+.lightgallery a img {
+  width: 640px;
+  height: 480px;
+}

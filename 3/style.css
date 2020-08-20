@@ -1,0 +1,32 @@
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 20px;
+}
+
+.cart {
+    margin-top: 50px;
+}
+
+.product {
+    width: 300px;
+}
+
+img {
+    display: block;
+}
+
+button {
+    margin-top: 15px;
+    display: block;
+    width: 80px;
+    height: 40px;
+}
+
+tr {
+    text-align: center;
+}
+
+th {
+    width: 100px;
+}
